@@ -1,0 +1,31 @@
+
+<h3 class="text-center mt-3 mb-3 text-primary">Golf</h3>
+<table class="table text-white">
+<th>Stadium</th>
+<th>Country</th>
+<th>Region</th>
+<th>Tournament</th>
+<th>Start</th>
+<th>Match</th>
+<?php 
+// echo "<pre>";
+// print_r($sports);
+foreach ($sports['golf'] as $v){
+?>
+<div class="text-center" >
+    <tr><td><?php echo $v['stadium']; ?></td>
+    <td><?php echo $v['country']; ?></td>
+    <td><?php echo $v['region']; ?></td>
+    <td><?php echo $v['tournament']; ?></td>
+    <td><?php echo $v['start']; ?></td>
+    <td><?php echo $v['match']; ?></td></tr>
+
+
+</div>
+
+
+<?php
+
+}
+?>
+</table>

@@ -1,0 +1,27 @@
+<?php
+
+?>
+<h2 class="text-center text-white" ><?php echo $timezone['location']['name']; ?>'s Timezone</h2>
+<div class="container-fluid mt-1 mb-3">
+    <div class="row justify-content-center">
+        <div class="col-3 mt-4">
+          <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title"><b>Region:-</b></h5><span><?php echo $timezone['location']['region'];  ?></span>
+              <p class="card-text"><b>Country</b>:-<?php echo $timezone['location']['country'];  ?></p>
+              <p class="card-text"><b>Latitude</b>:-<?php echo $timezone['location']['lat'];  ?>,<b>Longitude:-</b> <?php echo $timezone['location']['lon'];  ?></p>
+              <div class="badge bg-dark text-white position-absolute" style="bottom: 0.5rem; right: 0.5rem"></div>
+              <div class="d-flex justify-content-end socials p-2 py-3">
+              <p class="card-text"><b><?php //echo $k['condition']['text']; ?></b></p>
+              <div>
+              <p class="card-text"><b><?php echo $timezone['location']['localtime'];  ?></b></p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      
+    </div>
+  </div>

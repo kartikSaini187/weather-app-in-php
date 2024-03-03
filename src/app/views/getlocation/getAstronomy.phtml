@@ -1,0 +1,32 @@
+<?php 
+
+?>
+<section class="vh-100" style="background-color: #4B515D;">
+  <div class="container py-5 h-100 text-center" >
+  <h4 class=" text-white" ><?php echo $astronomy['location']['name']; ?>'s Astronomy</h2>
+  <div class="container-fluid mt-1 mb-3">
+    <div class="row justify-content-center">
+    <?php foreach($astronomy['astronomy'] as $v){
+
+?>
+      
+          
+        <table class="text-white" >
+          <tr><td><b>Sunrise</b>:-</td><td><?php  echo $v['sunrise']; ?> </td></tr>
+           <tr><td><b>Sunset</b>:-</td><td><?php  echo $v['sunset']; ?></td></tr>
+             <tr><td><b>Moonrise</b>:-</td><td><?php  echo $v['moonrise']; ?></td></tr>
+             <tr><td><b>Moonset</b>:-</td><td><?php  echo $v['moonset']; ?></td></tr>
+            <tr><td><b>Moon Phase</b>:-</td><td><?php  echo $v['moon_phase']; ?></td></tr>
+             <tr><td><b>Moon Illuminaton</b>:-</td><td><?php  echo $v['moon_illumination']; ?></td></tr>
+              </table>
+          
+<?php } ?>
+        
+        
+    </div>
+     
+    
+
+</div>
+    </div>
+    </div></section>

@@ -1,0 +1,32 @@
+<?php
+ 
+?>
+<h2 class="text-center text-white" ><?php echo $forecast['location']['name']; ?>'s Forecast</h2>
+<div class="container-fluid mt-1 mb-3">
+    <div class="row justify-content-center">
+      
+<?php foreach($forecast['forecast']['forecastday'] as $v ){
+    foreach($v['hour'] as $k  ){
+ ?>
+        <div class="col-3 mt-4">
+          <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><i class="fa fa-person"></i><?php echo $k['time'];  ?></h5>
+              <p class="card-text"><b>Temprature</b>:    <?php echo $k['temp_c']  ?>°C</p>
+           
+              <div class="badge bg-dark text-white position-absolute" style="bottom: 0.5rem; right: 0.5rem"></div>
+              <div class="d-flex justify-content-end socials p-2 py-3">
+              <p class="card-text"><b><?php echo $k['condition']['text']; ?></b></p>
+              <div>
+                <img src="<?php echo $k['condition']['icon'];  ?>" width="100px">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php }
+}
+?>
+      
+    </div>
+  </div>

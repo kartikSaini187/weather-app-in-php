@@ -1,0 +1,34 @@
+<?php 
+// echo "<pre>";
+// print_r($aqiresult);
+
+?>
+<section class="vh-100" style="background-color: #4B515D;">
+  <div class="container py-5 h-100 text-center" >
+  <h4 class=" text-white" ><?php echo $aqiresult['location']['name']; ?>'s Astronomy</h2>
+   
+
+
+      
+          
+        <table class="text-white" >
+          <tr><td><b>co</b>:-</td><td><?php  echo $aqiresult['current']['air_quality']['co']; ?> </td></tr>
+           <tr><td><b>no2</b>:-</td><td><?php echo $aqiresult['current']['air_quality']['no2']; ?></td></tr>
+             <tr><td><b>o3</b>:-</td><td><?php echo $aqiresult['current']['air_quality']['o3']; ?></td></tr>
+             <tr><td><b>so2</b>:-</td><td><?php  echo $aqiresult['current']['air_quality']['so2']; ?></td></tr>
+            <tr><td><b>pm2_5</b>:-</td><td><?php  echo $aqiresult['current']['air_quality']['pm2_5']; ?></td></tr>
+             <tr><td><b>pm10</b>:-</td><td><?php  echo $aqiresult['current']['air_quality']['pm10']; ?></td></tr>
+             <tr><td><b>us-epa-index</b>:-</td><td><?php  echo $aqiresult['current']['air_quality']['us-epa-index']; ?></td></tr>
+             <tr><td><b>gb-defra-index</b>:-</td><td><?php  echo $aqiresult['current']['air_quality']['gb-defra-index']; ?></td></tr>
+ 
+            </table>
+          
+<?php  ?>
+        
+        
+    </div>
+     
+    
+
+</div>
+</section>
